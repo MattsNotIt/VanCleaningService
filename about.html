@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
         .super-clean-image {
-            width: 1247px;
-            height: 1662px;
+            width: calc(1247px / 3);
+            height: auto;
         }
     </style>
     
@@ -36,7 +43,9 @@
         <p>Maybe just check out the FAQ page? There might be a new question there.</p>
         <p>If there is no questions or I just didnt answer the questions on the FAQ page, just ask me in person or visit the contact page</p>
 
-        <img src="images/SuperClean.png" class="super-clean-image" alt="Me">
+        <div class="image-container">
+            <img src="images/SuperClean.png" class="super-clean-image" alt="Super Clean Image">
+        </div>
         
     </main>
     <footer>
