@@ -83,24 +83,6 @@ h1, h2 {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#gallery2 {
-  margin-bottom: 30px;
-}
-
-.gallery-container2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery-container img2 {
-  width: 400px;
-  height: 650px;
-  margin: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 footer {
   background-color: #333;
   color: #fff;
