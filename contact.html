@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Van Cleaners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>The Van Cleaners</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="purchase.html">Purchase</a></li>
+                <li><a href="#">Redeem Coupon</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-section">
+            <h2>Contact Us</h2>
+
+            <p>I am definitely interested in hearing from you!</p>
+            <p> I do have to say, if you insist on contacting me, I do
+            not accept complaints.</p>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="message"></div>
+        </section>
+
+        <script>
+            const contactForm = document.getElementById('contact-form');
+            const messageDiv = document.getElementById('message');
+
+            contactForm.addEventListener('submit', (event) => {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Disable the button and display a loading message
+                const submitButton = event.target.querySelector('button[type="submit"]');
+                submitButton.disabled = true;
+                messageDiv.innerHTML = 'Submitting...';
+
+                // Simulate a delay (1-2 seconds)
+                setTimeout(() => {
+                    messageDiv.innerHTML = "Thanks for trying to contact me! I might check my phone later!";
+                    submitButton.disabled = false; // Re-enable the button
+                }, 1500); // 1500 milliseconds = 1.5 seconds
+            });
+        </script>
+    </main>
+
+    <footer>
+        <!-- footer -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
