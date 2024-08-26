@@ -47,7 +47,8 @@ h1, h2 {
 }
 
 .info-container {
-  display: absolute;
+  display: flex;
+  flex-wrap: wrap;
   justify-content; center;
 }
 
