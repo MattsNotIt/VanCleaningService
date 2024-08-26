@@ -42,6 +42,23 @@ h1, h2 {
   text-align: center;
 }
 
+#information {
+  margin-bottom; 30px;
+}
+
+.info-container {
+  display: absolute;
+  justify-content; center;
+}
+
+.info {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 #reviews {
   margin-bottom: 30px;
 }
